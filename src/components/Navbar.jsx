@@ -1,7 +1,7 @@
 import { Chip } from "@mui/material";
 export default function Navbar() {
   return (
-    <nav className="fixed w-screen bg-black/50 md:px-[8rem] px-[1rem] flex items-center justify-around space-x-10 md:py-0 py-[1rem] border-b-[1px] border-zinc-700 backdrop-blur-xl">
+    <nav className="z-10 fixed w-screen bg-black/30 md:px-[8rem] px-[1rem] flex items-center justify-around space-x-10 md:py-0 py-[1rem] border-b-[1px] border-zinc-700 backdrop-blur-lg backdrop-filter">
       <img src="/logo.svg"></img>
       <div className="flex items-center justify-around flex-grow space-x-10 p-0">
         <ul className="flex items-center justify-around text-zinc-400  w-full font-medium">

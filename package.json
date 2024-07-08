@@ -12,9 +12,13 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@mui/material": "^5.16.0",
+    "@tanstack/react-query": "^5.50.1",
+    "@web3modal/wagmi": "^5.0.6",
     "next": "14.2.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "viem": "^2.17.3",
+    "wagmi": "^2.10.9"
   },
   "devDependencies": {
     "@types/node": "^20",
