@@ -16,6 +16,7 @@ const config: Config = {
       },
       colors: {
         purple_: "#6435e9",
+        ringColor: "rgb(59,130,246)",
       },
     },
   },

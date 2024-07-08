@@ -24,7 +24,7 @@ export default function Creator() {
     },
   ];
   return (
-    <div className="flex flex-col items-center justify-center border-t-[1px] border-t-zinc-700/50 py-[4rem] px-[2rem]">
+    <div className="w-[100%] flex flex-col items-center justify-center border-t-[1px] border-t-zinc-700/50 py-[4rem] px-[2rem]">
       <h1 className="text-3xl tracking-wide text-slate-50 font-semibold">
         Top Creators and Projects To follow
       </h1>
@@ -47,7 +47,7 @@ export default function Creator() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 16 16"
                   fill="white"
-                  className="scale-150 h-[2rem] rounded-full felx items-center mix-blend-overlay"
+                  className="scale-150 h-[2rem] rounded-full flex items-center mix-blend-overlay"
                 >
                   <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
                 </svg>

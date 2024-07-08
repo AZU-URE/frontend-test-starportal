@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
-    <section className="w-screen pt-[4.6rem] realtive">
-      <img src="/hero_bg.png"></img>
+    <section className="w-[100%] realtive">
+      <img src="/hero_bg.png" className="w-[100%]"></img>
       <div className="absolute top-[30%] flex flex-col items-center justify-center w-full space-y-[1.5rem] ">
         <img
           src="/home_img.gif"
