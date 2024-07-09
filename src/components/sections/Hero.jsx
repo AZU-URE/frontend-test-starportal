@@ -5,9 +5,9 @@ export default function Hero() {
       <div className="absolute top-[30%] flex flex-col items-center justify-center w-full ">
         <img
           src="/home_img.gif"
-          className="mix-blend-screen w-[20vw] h-auto"
+          className="mix-blend-screen w-[20vw] h-auto "
         ></img>
-        <div className="absolute top-[60%] translate-y-10 transform transition ease-in duration-1000 flex flex-col items-center justify-center w-full space-y-[1.5rem]">
+        <div className="flex flex-col items-center justify-center w-full space-y-[1.5rem] mt-[1.5rem]">
           <p className="text-xl text-zinc-600 font-semibold text-center">
             <span className="text-zinc-300">Intract users</span> have together
             made more than <span className="text-zinc-300"> $100 million</span>{" "}

@@ -3,7 +3,10 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/sections/Hero";
 import Creator from "../components/sections/Creators";
 import Dictionary from "../components/sections/Dictionary";
+import TabSwitcher from "../components/TabSwitcher";
+import { useState } from "react";
 export default function Home() {
+  const [tab, setTab] = useState(1);
   return (
     <div className="w-full bg-black flex items-center flex-col justify-center">
       <Navbar />
@@ -12,9 +15,7 @@ export default function Home() {
         <Creator />
         <Dictionary />
       </div>
-      <div className="w-[100%] sticky bottom-[5%] z-20 my-10 flex items-center justify-center bg-red-500">
-        <div className="bg-zinc-500/40 text-white w-fit flex ">Essentials</div>
-      </div>
+      <TabSwitcher tab={tab} setTab={setTab} />
     </div>
   );
 }
