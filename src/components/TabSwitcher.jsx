@@ -5,7 +5,7 @@ export default function TabSwitcher({ tab, setTab }) {
         <p
           className={`${
             tab === 1 ? " bg-zinc-300/50 text-white" : ""
-          } rounded-3xl py-1 text-base font-medium w-full text-center hover:bg-zinc-400/30 hover:text-white tra`}
+          } rounded-3xl py-2 text-base font-medium w-full text-center hover:bg-zinc-400/30 hover:text-white tra`}
           onClick={() => setTab(1)}
         >
           Essentials
@@ -14,7 +14,7 @@ export default function TabSwitcher({ tab, setTab }) {
           onClick={() => setTab(2)}
           className={`${
             tab === 2 ? " bg-zinc-300/50 text-white" : ""
-          } rounded-3xl py-1 text-base font-medium w-full text-center hover:bg-zinc-400/30 hover:text-white`}
+          } rounded-3xl py-2 text-base font-medium w-full text-center hover:bg-zinc-400/30 hover:text-white`}
         >
           Alpha Hub
         </p>

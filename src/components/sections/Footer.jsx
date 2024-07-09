@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t-[1px] border-t-zinc-700/50 py-[4rem] mt-[4rem] flex items-center justify-center ">
-        <p className="footer-links ">
+        <p className="text-sm font-medium text-zinc-600">
           <span className="text-zinc-200">Disclaimer:</span> Crypto Products,
           Virtual Digital Assets, and NFTs are unregulated and can be highly
           risky. There may be no regulatory recourse for any loss from such
@@ -56,7 +56,7 @@ export default function Footer() {
           attributable to us.
         </p>
       </div>
-      <div className="border-t-[1px] border-t-zinc-700/50 py-[4rem] mt-[4rem] flex items-center justify-between w-full">
+      <div className="border-t-[1px] border-t-zinc-700/50 pt-[4rem] flex items-center justify-between w-full">
         <p className="uppercase text-white">
           Created by{" "}
           <Link
@@ -74,11 +74,12 @@ export default function Footer() {
             <img src="/twitter.png" className="w-[1.25rem]"></img>
           </Link>
           <Link
-            gref={"https://discord.com/users/AZU_URE"}
+            href={"https://discord.com/users/AZU_URE"}
             className="p-[0.5rem] bg-zinc-800 rounded-xl"
           >
             <img src="/discord.png" className="w-[1.25rem]"></img>
           </Link>
+
           <Link
             href={"https://t.me/azu_ure"}
             className="p-[0.5rem] bg-zinc-800 rounded-xl"

@@ -5,17 +5,26 @@ import Creator from "../components/sections/Creators";
 import Dictionary from "../components/sections/Dictionary";
 import TabSwitcher from "../components/TabSwitcher";
 import Footer from "../components/sections/Footer";
+import AlfaHero from "../components/sections/alfa/Hero";
+import Narratives from "../components/sections/alfa/Narratives";
 import { useState } from "react";
+
 export default function Home() {
   const [tab, setTab] = useState(1);
   return (
-    <div className="w-full bg-black flex items-center flex-col justify-center">
+    <div className="w-[100%] bg-black flex items-center flex-col justify-center">
       <Navbar />
-      <div className="overflow-x-hidden w-[100%] flex items-center flex-col justify-center">
+      {tab === 1 ? (
         <Hero />
-        <Creator />
-        <Dictionary />
-      </div>
+      ) : (
+        <div className=" w-[100%] flex items-center flex-col justify-center">
+          <AlfaHero />
+          <Narratives />
+        </div>
+      )}
+      <Creator />
+      <Dictionary />
+
       <TabSwitcher tab={tab} setTab={setTab} />
       <Footer />
     </div>
