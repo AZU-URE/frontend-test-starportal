@@ -155,4 +155,56 @@ const narrative_detail = [
   },
 ];
 
-export { slider_details, narrative_detail };
+const recom_narrative = [
+  {
+    id: 1,
+    title: "Exploring Scroll",
+    desc: "Scroll seamlessly extends Ethereum’s capabilities through zero knowledge tech and EVM compatibility. The L2 network built by Ethereum devs for Ethereum devs.",
+    quests: 5,
+    xp: 390,
+    img: "/alpha/recom1.png",
+  },
+  {
+    id: 2,
+    title: "Exploring BASE",
+    desc: "Base is a secure, low-cost, builder-friendly Ethereum L2 built to bring the next billion users onchain.",
+
+    quests: 3,
+    xp: 170,
+    img: "/alpha/recom2.png",
+  },
+  {
+    id: 3,
+    title: "Exploring SOcialFi Drops",
+    desc: "Explore SocialFi drops. SocialFi drops fuse finance with social media, empowering creators",
+    quests: 4,
+    xp: 380,
+    img: "/alpha/recom3.jpg",
+  },
+  {
+    id: 4,
+    title: "Get onboarded on Bitcoin",
+    desc: "Bitcoin: the first decentralized digital currency, enabling direct transactions on a peer-to-peer network without central authority, powered by blockchain technology for secure, transparent, and immutable exchanges. 🌍💼🔒",
+    quests: 2,
+    xp: 180,
+    img: "/alpha/recom4.png",
+  },
+  {
+    id: 5,
+    title: "Trending",
+    desc: "Explore the Latest Trends: Discover Projects on the Verge of Mainnet Launch or with Exciting Airdrop Opportunities.",
+    quests: 4,
+    xp: 280,
+    img: "/alpha/recom5.png",
+  },
+  {
+    id: 6,
+    title: "Exploring Solana",
+    desc: "Solana: A blazing-fast blockchain with speeds up to 65,000 transactions per second, surpassing Bitcoin and Ethereum. Low transaction fees and minimal energy consumption make it cost-effective and sustainable. Explore Solana’s ecosystem for cutting-edge development! 🚀💡🔗",
+    quests: 5,
+    xp: 480,
+    img: "/alpha/recom6.png",
+  },
+];
+
+export { slider_details, narrative_detail, recom_narrative };

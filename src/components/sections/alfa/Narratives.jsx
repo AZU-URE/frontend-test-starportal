@@ -18,7 +18,7 @@ export default function Naratives() {
     }
   }, [card]);
   return (
-    <section className="w-[100%] px-[11rem] border-t-[1px] border-t-zinc-700/50 my-[8rem]">
+    <section className="w-[100%] px-[11rem] border-t-[1px] border-t-zinc-700/50 mt-[8rem]">
       <div className="flex flex-col items-start justify-center space-y-5 mt-[3rem]">
         <h1 className="text-2xl tracking-wide text-slate-50 mb-3">
           Popular Narratives
