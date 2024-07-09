@@ -57,15 +57,23 @@ export default function Footer() {
         </p>
       </div>
       <div className="border-t-[1px] border-t-zinc-700/50 pt-[4rem] flex items-center justify-between w-full">
-        <p className="uppercase text-white">
-          Created by{" "}
-          <Link
-            href={"https://github.com/AZU-URE"}
-            className="underline hover:text-zinc-400"
-          >
-            Garima Mangal
-          </Link>
-        </p>
+        <div className="flex flex-col items-start justify-center space-y-2">
+          <p className="uppercase text-white">
+            Created by{" "}
+            <Link href={"https://github.com/AZU-URE"} className="underline ">
+              Garima Mangal
+            </Link>
+          </p>
+          <p className=" text-zinc-500 text-sm">
+            Cloned from{" "}
+            <Link
+              href={"https://www.intract.io/academy?tab=essentials"}
+              className="hover:text-zinc-400 italic"
+            >
+              Intract
+            </Link>
+          </p>
+        </div>
         <div className="flex items-center justify-between space-x-4 ">
           <Link
             href={"https://twitter.com/AZU_URE"}
