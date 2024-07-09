@@ -2,7 +2,7 @@ import Avatar from "@mui/material/Avatar";
 import AvatarGroup from "@mui/material/AvatarGroup";
 import QuestCard from "./QuestCard";
 import Slider from "react-slick";
-export default function PopularNarrativeCard({ el }) {
+export default function PopularNarrativeCard({ el, show }) {
   const sliderSettings = {
     dots: true,
     infinite: false,
@@ -13,7 +13,11 @@ export default function PopularNarrativeCard({ el }) {
     vertical: false,
   };
   return (
-    <div className="group flex items-center bg-white/5 border-[1px] border-white/20 backdrop-filter backdrop-blur-sm rounded-3xl justify-center  object-contain overflow-hidden">
+    <div
+      className={`group flex items-center bg-white/5 border-[1px] border-white/20 backdrop-filter backdrop-blur-sm rounded-3xl justify-center  object-contain overflow-hidden ${
+        show ? "" : "hidden"
+      } `}
+    >
       <div className="flex flex-col items-start space-y-[1rem] w-[35%] justify-between bg-zinc-800/40 cursor-pointer hover:bg-zinc-800/90 border-r-[1px] border-r-zinc-700/50 p-[1.5rem] transition-colors duration-300">
         <h1 className="text-2xl tracking-wide text-slate-50 font-medium">
           {el.title}
