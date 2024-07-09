@@ -31,3 +31,23 @@ body {
     text-wrap: balance;
   }
 } */
+
+.footer-links {
+  color: #52525b;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+:hover.footer-links {
+  color: white;
+}
+
+.footer-link-heading {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
