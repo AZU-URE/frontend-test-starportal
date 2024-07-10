@@ -8,10 +8,13 @@ import Footer from "../components/sections/Footer";
 import AlfaHero from "../components/sections/alfa/Hero";
 import Narratives from "../components/sections/alfa/Narratives";
 import RecomNarrative from "@/components/sections/alfa/RecomNarrative";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [tab, setTab] = useState(1);
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [tab]);
   return (
     <div className="w-[100%] bg-black flex items-center flex-col justify-center">
       <Navbar />
