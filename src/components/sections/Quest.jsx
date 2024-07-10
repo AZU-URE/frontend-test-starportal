@@ -5,7 +5,7 @@ import RewardCard from "../RewardCard";
 import DoneIcon from "@mui/icons-material/Done";
 export default function Quest() {
   return (
-    <section className="w-[100%] flex flex-col justify-center pb-[2rem] md:px-[2rem] px-1">
+    <section className="w-[100%] flex flex-col justify-center pb-[2rem] md:px-[2rem] px-1 ">
       <div className="relative md:flex hidden items-center justify-start ">
         <svg
           width="121"
@@ -514,7 +514,7 @@ export default function Quest() {
         </div>
         <ChapterCard {...quest[1]} />
       </div>
-      <div className="flex md:hidden flex-col items-center justify-around space-y-[3rem] mb-[3rem]">
+      <div className="flex md:hidden flex-col items-center justify-around space-y-[3rem] mb-[3rem] pt-[1rem]">
         <ChapterCard {...quest[0]}></ChapterCard>
         <RewardCard {...reward[0]}></RewardCard>
         <ChapterCard {...quest[1]}></ChapterCard>
