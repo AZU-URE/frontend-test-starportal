@@ -3,14 +3,20 @@ import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState, useRef } from "react";
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
-  const anchorRef = useRef(null);
+  const [openMenu, setOpenMenu] = useState(false);
+  const anchorRefMenu = useRef(null);
 
-  const toggleDrawer = (newOpen) => () => {
-    setOpen(newOpen);
+  const toggleDrawerMenu = (newOpen) => () => {
+    setOpenMenu(newOpen);
+  };
+  const [openTv, setOpenTv] = useState(false);
+  const anchorRefTv = useRef(null);
+
+  const toggleDrawerTv = (newOpen) => () => {
+    setOpenTv(newOpen);
   };
 
-  const drawer = (
+  const drawerMenu = (
     <div className="flex flex-col items-start justify-center space-y-5 bg-black/30 border-r-[1px] border-zinc-700 backdrop-blur-lg backdrop-filter w-full h-fit">
       <ul className="flex flex-col items-center justify-around text-zinc-400  w-full font-medium">
         <li className=" hover:text-white p-[1.5rem] rounded-b-sm cursor-pointer bg-zinc-800 hover:bg-black/60 w-full text-center border-b-[1px] border-b-zinc-700">
@@ -33,6 +39,14 @@ export default function Navbar() {
           For Projects
         </li>
       </ul>
+    </div>
+  );
+
+  const drawerTv = (
+    <div className="flex flex-col items-center justify-center space-y-5 bg-zinc-600 border-l-2 border-l-zinc-200/50 backdrop-blur-lg backdrop-filter md:w-[30vw] w-[50vw] h-full lg:p-10 p-1">
+      <p className="text-white font-semibold lg:text-3xl md:text-xl text-center w-ful">
+        Nothing to display now
+      </p>
     </div>
   );
 
@@ -72,7 +86,11 @@ export default function Navbar() {
         />
       </div>
       <div className="flex items-center justify-center space-x-3 ">
-        <div className="border-2 p-2 rounded-full border-[#965214]">
+        <div
+          className="border-2 p-2 rounded-full border-[#965214]"
+          onClick={toggleDrawerTv(true)}
+          ref={anchorRefTv}
+        >
           <img src="/tv.svg" className="w-[1.25rem]"></img>
         </div>
         <button className="bg-white px-[1.25rem] py-[0.5rem] text-sm rounded-md font-semibold">
@@ -81,18 +99,27 @@ export default function Navbar() {
         <MenuIcon
           className="lg:hidden flex w-[2rem] text-zinc-400"
           // onClick={(prev) => setList(!prev)}
-          onClick={toggleDrawer(true)}
-          ref={anchorRef}
+          onClick={toggleDrawerMenu(true)}
+          ref={anchorRefMenu}
         />
       </div>
       <Drawer
-        open={open}
-        onClose={toggleDrawer(false)}
+        open={openMenu}
+        onClose={toggleDrawerMenu(false)}
         anchor="top"
-        anchorEl={anchorRef.current}
+        anchorEl={anchorRefMenu.current}
         className=""
       >
-        {drawer}
+        {drawerMenu}
+      </Drawer>
+      <Drawer
+        open={openTv}
+        onClose={toggleDrawerTv(false)}
+        anchor="right"
+        anchorEl={anchorRefTv.current}
+        className=""
+      >
+        {drawerTv}
       </Drawer>
       {/* <div
         className={`${
