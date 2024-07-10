@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <section className="w-[100%] flex flex-col items-center justify-around border-t-[1px] border-t-zinc-700/50 py-[4rem] px-[8rem]">
-      <div className="flex items-start justify-between">
+    <section className="w-[100%] flex flex-col items-center justify-around border-t-[1px] border-t-zinc-700/50 py-[4rem] md:px-[8rem] px-[1rem]">
+      <div className="flex lg:flex-row flex-col lg:space-y-0 space-y-[2rem] items-start justify-between">
         <div className="flex flex-col items-start mt-[1rem] justify-center">
           <img src="/logo.svg"></img>
           <p className="text-sm font-medium text-zinc-600 mt-[1rem] w-[80%]">
@@ -11,7 +11,7 @@ export default function Footer() {
             100x rewards.
           </p>
         </div>
-        <div className="flex items-start justify-around space-x-[4rem]">
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 items-start justify-around lg:gap-[4rem] gap-[2rem]">
           <div className="flex flex-col items-start justify-center space-y-[0.5rem]">
             <p className="footer-link-heading ">Intract</p>
             <p className="footer-links">Explore Quests</p>
@@ -56,8 +56,8 @@ export default function Footer() {
           attributable to us.
         </p>
       </div>
-      <div className="border-t-[1px] border-t-zinc-700/50 pt-[4rem] flex items-center justify-between w-full">
-        <div className="flex flex-col items-start justify-center space-y-2">
+      <div className="border-t-[1px] border-t-zinc-700/50 pt-[4rem] flex md:flex-row flex-col space-y-5 md:space-y-0 items-center justify-between w-full">
+        <div className="flex flex-col md:items-start items-center justify-center space-y-2">
           <p className="uppercase text-white">
             Created by{" "}
             <Link href={"https://github.com/AZU-URE"} className="underline ">

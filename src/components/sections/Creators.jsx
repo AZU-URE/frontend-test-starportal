@@ -25,13 +25,13 @@ export default function Creator() {
   ];
   return (
     <div className="w-[100%] flex flex-col items-center justify-center border-t-[1px] border-t-zinc-700/50 py-[4rem] px-[2rem]">
-      <h1 className="text-3xl tracking-wide text-slate-50 font-semibold">
+      <h1 className="md:text-3xl text-2xl text-center md:tetx-left tracking-wide text-slate-50 font-semibold">
         Top Creators and Projects To follow
       </h1>
-      <p className="text-base tracking-wide text-zinc-400 font-medium mt-3">
+      <p className="md:text-base text-xs tracking-wide text-zinc-400 font-medium mt-3">
         Answers to your crypto doubts,straight from the experts
       </p>
-      <div className="grid grid-cols-4 gap-5 mt-[5rem]">
+      <div className="grid md:grid-cols-4 grid-cols-2 gap-5 md:mt-[5rem] mt-[3rem]">
         {image_arr.map((el, id) => (
           <div className="group rounded-xl overflow-hidden border-[1px] border-slate-50/50 relative">
             <img
