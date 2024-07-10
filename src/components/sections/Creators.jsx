@@ -28,7 +28,7 @@ export default function Creator() {
       <h1 className="md:text-3xl text-2xl text-center md:tetx-left tracking-wide text-slate-50 font-semibold">
         Top Creators and Projects To follow
       </h1>
-      <p className="md:text-base text-xs tracking-wide text-zinc-400 font-medium mt-3">
+      <p className="md:text-base sm:text-xs text-[10px] tracking-wide text-zinc-400 font-medium mt-3">
         Answers to your crypto doubts,straight from the experts
       </p>
       <div className="grid md:grid-cols-4 grid-cols-2 gap-5 md:mt-[5rem] mt-[3rem]">

@@ -9,6 +9,7 @@ export default function Naratives() {
       setCard(card + 1);
     } else if (card == narrative_detail.length) {
       setCard(1);
+      setBtnTitle("Show More");
     }
   };
 
@@ -18,9 +19,9 @@ export default function Naratives() {
     }
   }, [card]);
   return (
-    <section className="w-[100%] px-[11rem] border-t-[1px] border-t-zinc-700/50 mt-[8rem]">
+    <section className="w-[100%] lg:px-[11rem] px-[3rem] border-t-[1px] border-t-zinc-700/50 lg:mt-[8rem] mt-[40rem]">
       <div className="flex flex-col items-start justify-center space-y-5 mt-[3rem]">
-        <h1 className="text-2xl tracking-wide text-slate-50 mb-3">
+        <h1 className="sm:text-2xl text-lg tracking-wide text-slate-50 mb-3">
           Popular Narratives
         </h1>
         {narrative_detail.map((el) => (

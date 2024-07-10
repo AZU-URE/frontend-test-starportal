@@ -16,19 +16,19 @@ export default function AlfaHero() {
   return (
     <section className="w-[100%]">
       <img src="/hero_bg.png" className="w-[100%]"></img>
-      <div className="absolute w-[100%] top-[30%] flex flex-col items-center justify-center  px-[8rem]">
+      <div className="absolute w-[100%] md:top-[30%] top-[20%] flex flex-col items-center justify-center  lg:px-[8rem] px-[1rem]">
         <div className="relative">
           <img
             src="/home_img.gif"
-            className="mix-blend-screen w-[15vw] h-auto"
+            className="mix-blend-screen lg:w-[15vw] w-[25vw] h-auto"
           ></img>
           <img
             src="/alpha/alpha_home_img.svg"
-            className="absolute -bottom-[3.5rem] -right-[3.5rem]"
+            className="absolute md:-bottom-[3.5rem] md:-right-[3.5rem] -bottom-[2rem] -right-[2rem] w-[15vw] md:w-fit"
           ></img>
         </div>
-        <div className="mt-[9rem] flex flex-col items-start justify-center w-full ">
-          <h1 className="text-2xl tracking-wide text-slate-50 mb-10 px-12 ">
+        <div className="lg:mt-[9rem] mt-[2rem] md:mt-[3rem] flex flex-col items-start justify-center w-full ">
+          <h1 className="sm:text-2xl text-lg tracking-wide text-slate-50 lg:mb-10 mb-7 px-12 ">
             Daily New Alpha For You
           </h1>
           <div className="w-[100%] h-fit overflow-hidden px-12 ">

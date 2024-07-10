@@ -3,13 +3,13 @@ import AvatarGroup from "@mui/material/AvatarGroup";
 
 export default function AlfaSliderSlide({ title, desc, count, img }) {
   return (
-    <div className="flex items-center bg-white/5 border-[1px] border-white/20 backdrop-filter backdrop-blur-sm p-4  rounded-3xl justify-center space-x-6 object-contain overflow-hidden">
-      <img src={img} className="rounded-xl w-[50%]"></img>
-      <div className="flex flex-col justify-center items-start mt-2 p-3">
-        <h1 className="text-2xl tracking-wide text-slate-50 font-medium mb-2">
+    <div className="flex lg:flex-row flex-col items-center bg-white/5 border-[1px] border-white/20 backdrop-filter backdrop-blur-sm p-4  rounded-3xl justify-center sm:space-x-6 object-contain overflow-hidden">
+      <img src={img} className="rounded-xl lg:w-[50%] md:w-[100%]"></img>
+      <div className="flex flex-col justify-center items-start mt-2 sm:p-3 p-1">
+        <h1 className="sm:text-2xl text-xl tracking-wide text-slate-50 font-medium mb-2">
           {title}
         </h1>
-        <p className=" pb-5 border-b-[1px] border-b-zinc-700 text-base font-medium w-full text-zinc-400 ">
+        <p className=" pb-5 border-b-[1px] border-b-zinc-700 sm:text-base text-sm font-medium w-full text-zinc-400 ">
           {desc}
         </p>
         <AvatarGroup className="mt-3">
@@ -32,7 +32,7 @@ export default function AlfaSliderSlide({ title, desc, count, img }) {
             +{count}
           </div>
         </AvatarGroup>
-        <button className="mt-[2.25rem] font-semibold flex items-center justify-center space-x-2 w-[13vw] bg-purple_ text-white text-sm  rounded-lg p-[0.75rem] ring-2 ring-violet-400/60">
+        <button className="mt-[2.25rem] font-semibold flex items-center justify-center space-x-2 w-[10rem] bg-purple_ text-white text-sm  rounded-lg p-[0.75rem] ring-2 ring-violet-400/60">
           Begin Your Journey
         </button>
       </div>

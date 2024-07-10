@@ -41,13 +41,16 @@ export default function QuestCard({ el }) {
               : ""
           }`}
         >
-          <div className="text-center rounded-3xl border-[1px] border-zinc-600/50 p-[3px] px-2 bg-zinc-800/70 backdrop-blur-sm backdrop-filter text-sm font-medium text-zinc-400 flex items-center justify-center">
+          <div className="text-center rounded-3xl border-[1px] border-zinc-600/50 p-[3px] px-2 bg-zinc-800/70 backdrop-blur-sm backdrop-filter lg:text-sm text-xs font-medium text-zinc-400 flex items-center justify-center">
             <SplitscreenIcon className="w-[1rem] text-red-600" />
-            <span className="ml-1 text-zinc-100"> {el.task} Tasks</span>
+            <span className="lg:ml-1 ml-[2px] text-zinc-100">
+              {" "}
+              {el.task} Tasks
+            </span>
           </div>
-          <div className="text-center rounded-3xl border-[1px] border-zinc-600/50 p-[0.32rem] px-2 bg-zinc-800/70 backdrop-blur-sm backdrop-filter text-sm font-medium text-zinc-400 flex items-center justify-center">
+          <div className="text-center rounded-3xl border-[1px] border-zinc-600/50 p-[0.32rem] px-2 bg-zinc-800/70 backdrop-blur-sm backdrop-filter lg:text-sm text-xs  font-medium text-zinc-400 flex items-center justify-center">
             <img src="/yellowCoin.svg" className="w-[1rem]"></img>
-            <span className="ml-1 text-zinc-100"> {el.xp} XPs</span>
+            <span className="lg:ml-1 ml-[4px] text-zinc-100"> {el.xp} XPs</span>
           </div>
         </div>
         <div
@@ -57,13 +60,16 @@ export default function QuestCard({ el }) {
               : ""
           }`}
         >
-          <div className="text-center rounded-3xl border-[1px] border-zinc-600/50 p-[3px] px-2 bg-zinc-800/70 backdrop-blur-sm backdrop-filter text-sm font-medium text-zinc-400 flex items-center justify-center">
+          <div className="text-center rounded-3xl border-[1px] border-zinc-600/50 p-[3px] px-2 bg-zinc-800/70 backdrop-blur-sm backdrop-filter lg:text-sm text-xs font-medium text-zinc-400 flex items-center justify-center">
             <SplitscreenIcon className="w-[1rem] text-red-600" />
-            <span className="ml-1 text-zinc-100"> {el.task} Tasks</span>
+            <span className="lg:ml-1 ml-[2px] text-zinc-100">
+              {" "}
+              {el.task} Tasks
+            </span>
           </div>
-          <div className="text-center rounded-3xl border-[1px] border-zinc-600/50 p-[0.32rem] px-2 bg-zinc-800/70 backdrop-blur-sm backdrop-filter text-sm font-medium text-zinc-400 flex items-center justify-center">
+          <div className="text-center rounded-3xl border-[1px] border-zinc-600/50 p-[0.32rem] px-2 bg-zinc-800/70 backdrop-blur-sm backdrop-filter lg:text-sm text-xs font-medium text-zinc-400 flex items-center justify-center">
             <img src="/yellowCoin.svg" className="w-[1rem]"></img>
-            <span className="ml-1 text-zinc-100"> {el.xp} XPs</span>
+            <span className="lg:ml-1 ml-[4px] text-zinc-100"> {el.xp} XPs</span>
           </div>
         </div>
       </div>
