@@ -17,10 +17,16 @@ export default function AlfaHero() {
     <section className="w-[100%]">
       <img src="/hero_bg.png" className="w-[100%]"></img>
       <div className="absolute w-[100%] top-[30%] flex flex-col items-center justify-center  px-[8rem]">
-        <img
-          src="/home_img.gif"
-          className="mix-blend-screen w-[15vw] h-auto "
-        ></img>
+        <div className="relative">
+          <img
+            src="/home_img.gif"
+            className="mix-blend-screen w-[15vw] h-auto"
+          ></img>
+          <img
+            src="/alpha/alpha_home_img.svg"
+            className="absolute -bottom-[3.5rem] -right-[3.5rem]"
+          ></img>
+        </div>
         <div className="mt-[9rem] flex flex-col items-start justify-center w-full ">
           <h1 className="text-2xl tracking-wide text-slate-50 mb-10 px-12 ">
             Daily New Alpha For You
