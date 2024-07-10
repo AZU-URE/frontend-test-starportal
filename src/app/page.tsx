@@ -9,6 +9,7 @@ import AlfaHero from "../components/sections/alfa/Hero";
 import Narratives from "../components/sections/alfa/Narratives";
 import RecomNarrative from "@/components/sections/alfa/RecomNarrative";
 import { useEffect, useState } from "react";
+import Quest from "@/components/sections/Quest";
 
 export default function Home() {
   const [tab, setTab] = useState(1);
@@ -19,7 +20,10 @@ export default function Home() {
     <div className="w-[100%] bg-black flex items-center flex-col justify-center">
       <Navbar />
       {tab === 1 ? (
-        <Hero />
+        <div className=" w-[100%] flex items-center flex-col justify-center">
+          <Hero />
+          <Quest />
+        </div>
       ) : (
         <div className=" w-[100%] flex items-center flex-col justify-center">
           <AlfaHero />

@@ -207,4 +207,92 @@ const recom_narrative = [
   },
 ];
 
-export { slider_details, narrative_detail, recom_narrative };
+const quest = [
+  {
+    id: 1,
+    title: "Basics Of Crypto",
+    desc: "The safest and easiest place to start your crypto journey!",
+    xp: "1490",
+    quest: 6,
+    img: "/card1.png",
+    list: [
+      {
+        id: 1,
+        title: "But what is crypto and..",
+        task: 11,
+      },
+      {
+        id: 2,
+        title: "Setting up your own we..",
+        task: 8,
+      },
+      {
+        id: 3,
+        title: "What the heck is a..",
+        task: 8,
+      },
+      {
+        id: 4,
+        title: "Swapping and bridging..",
+        task: 10,
+      },
+      {
+        id: 5,
+        title: "BFTs and why they're..",
+        task: 6,
+      },
+      {
+        id: 6,
+        title: "Doing quests and winning..",
+        task: 8,
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Introduction to Airdrops",
+    desc: "Your best bet to make it big in crypto!",
+    xp: "1040",
+    quest: 4,
+    img: "/card2.png",
+    list: [
+      {
+        id: 1,
+        title: "What are airdrops, and..",
+        task: 7,
+      },
+      {
+        id: 2,
+        title: "Types of airdrops",
+        task: 10,
+      },
+      {
+        id: 3,
+        title: "How to earn huge $$$..",
+        task: 11,
+      },
+      {
+        id: 4,
+        title: "Things to keep in mind!",
+        task: 7,
+      },
+    ],
+  },
+];
+
+const reward = [
+  {
+    id: 1,
+    title: "Intract Certified: Learner NFT",
+    desc: "Your crypto black-belt certificate",
+    img: "/nft1.png",
+  },
+  {
+    id: 2,
+    title: "Intract Certified: Earner NFT",
+    desc: "Your proof of airdrop expertise",
+    img: "/nft2.png",
+  },
+];
+
+export { slider_details, narrative_detail, recom_narrative, quest, reward };
