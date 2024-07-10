@@ -5,8 +5,8 @@ import RewardCard from "../RewardCard";
 import DoneIcon from "@mui/icons-material/Done";
 export default function Quest() {
   return (
-    <section className="w-[100%] flex flex-col justify-center pb-[2rem] px-[2rem]">
-      <div className="relative flex items-center justify-start">
+    <section className="w-[100%] flex flex-col justify-center pb-[2rem] md:px-[2rem] px-1">
+      <div className="relative md:flex hidden items-center justify-start ">
         <svg
           width="121"
           height="19"
@@ -25,7 +25,7 @@ export default function Quest() {
         </svg>
         <ChapterCard {...quest[0]} />
       </div>
-      <div className="overflow-hidden   flex  justify-end -mt-[2rem] pr-[10vw] h-[75vh] ">
+      <div className="overflow-hidden md:flex hidden  justify-end -mt-[2rem] pr-[10vw] h-[75vh] ">
         <svg
           width="721"
           height="274"
@@ -136,7 +136,7 @@ export default function Quest() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-start -mt-[1rem]  h-[110vh]">
+      <div className="md:flex hidden justify-center items-start -mt-[1rem]  h-[110vh]">
         <div className="relative">
           <svg
             width="280"
@@ -514,14 +514,20 @@ export default function Quest() {
         </div>
         <ChapterCard {...quest[1]} />
       </div>
+      <div className="flex md:hidden flex-col items-center justify-around space-y-[3rem] mb-[3rem]">
+        <ChapterCard {...quest[0]}></ChapterCard>
+        <RewardCard {...reward[0]}></RewardCard>
+        <ChapterCard {...quest[1]}></ChapterCard>
+        <RewardCard {...reward[1]}></RewardCard>
+      </div>
       <div className="flex items-center justify-center flex-col space-y-[1rem] z-[1]">
-        <div className="border-[1px]  border-zinc-700 text-zinc-500 text-base bg-zinc-800/60 rounded-xl p-[1rem] text-center font-semibold flex flex-col items-start justify-around space-y-[1rem] w-[20vw]">
+        <div className="border-[1px]  border-zinc-700 text-zinc-500 text-base bg-zinc-800/60 rounded-xl p-[1rem] text-center font-semibold flex flex-col items-start justify-around space-y-[1rem] w-[20rem]">
           <div className="flex items-center justify-start space-x-[0.5rem]">
             <AccessTimeIcon className="text-orange-500 bg-orange-600/20 p-[2px] rounded-full" />
             <p className="text-zinc-500 text-base">Reward unlocks in</p>
           </div>
         </div>
-        <div className="w-[20vw] border-[1px] bg-zinc-800/60 rounded-xl p-[1rem] object-contain border-zinc-700 flex flex-col items-start justify-around space-y-3 relative">
+        <div className="w-[20rem] border-[1px] bg-zinc-800/60 rounded-xl p-[1rem] object-contain border-zinc-700 flex flex-col items-start justify-around space-y-3 relative">
           <img src="/timer_image.gif" className="rounded-xl"></img>
           <div className="bg-black/50 py-[0.25rem] px-[0.75rem] text-sm text-white font-semibold rounded-md absolute top-[1.5rem] right-[1.5rem]">
             Luck Draw
